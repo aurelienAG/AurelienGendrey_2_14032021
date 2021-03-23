@@ -1,0 +1,141 @@
+body
+{
+    font-family: 'Raleway';
+}
+
+#bloc_page 
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* Header */
+
+header 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin: 10px 20px 10px 20px; 
+}
+
+
+
+#logo_reservia 
+{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+} 
+
+#logo_reservia img 
+{
+    width: 120px;
+    height: 40px;
+}
+
+
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none; 
+    display: flex;
+}   
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #0165c6ED; 
+    border-top: 3px solid #0065FC; 
+}
+
+#inscrire 
+{
+    font-weight: bold;
+    color: #0065FC; 
+}
+
+
+h1 
+{
+    font-size: 1.3em; 
+}
+
+h2
+{
+    font-size: 1.1em;
+}
+
+p
+{
+    font-size: 1.0em;
+} 
+
+
+/* Section recherche */
+
+#Filtres ul 
+{
+    list-style-type: none;
+    display: flex;
+}
+
+#Filtres li
+{
+    margin-right: 40px;
+}
+
+#Filtres img 
+{
+    width: 30px;
+    height: 20px;
+    color:#0165c6
+}
+
+/* Section hébergements */ 
+
+#Hébergements 
+{
+    border: 1px grey solid;
+    border-radius: 20px;
+}
+
+
+.Hébergements
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.Hébergements img
+{
+    width: 190px;
+    height: 110px;
+}
+
+
+/* ASIDE LES PLUS POPULAIRES */ 
+
+#les_plus_populaires img 
+{
+    width: 190px;
+    height: 110px;
+} 
+
+
+
