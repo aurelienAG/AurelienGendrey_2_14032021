@@ -4,14 +4,13 @@ body
 }
 
 #bloc_page 
-{
-    margin-left: 20px;
-    margin-right: 20px;
+{   
+    margin-top: 30px;
+    margin-left: 42px;
+    margin-right: 30px;
 }
 
-
 /* Header */
-
 header 
 {
     display: flex;
@@ -21,9 +20,9 @@ header
 }
 
 
-
 #logo_reservia 
 {
+    margin-left: 10px;
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
@@ -31,23 +30,30 @@ header
 
 #logo_reservia img 
 {
+    margin-top: 18px;
     width: 120px;
     height: 40px;
 }
 
-
-
 /* Navigation */
+nav
+{   
+    font-size: 12px;
+    margin-top: 18px;
+    flex-direction: row;
+}
 
 nav ul
-{
+{   
     list-style-type: none; 
     display: flex;
 }   
 
 nav li
 {
+    color:black;
     margin-right: 15px;
+    margin-left: 40px;
 }
 
 nav a
@@ -58,34 +64,43 @@ nav a
 
 nav a:hover
 {
-    color: #0165c6ED; 
+    color: #0065FC; 
     border-top: 3px solid #0065FC; 
-}
+}    
 
 #inscrire 
 {
-    font-weight: bold;
+    font-weight: bolder;
     color: #0065FC; 
+    display: flex;
+    margin-left: 40px;
 }
 
-
 h1 
-{
-    font-size: 1.3em; 
+{   
+    color: black; 
+    font-weight: bolder;
+    font-size: 1.1em; 
 }
 
 h2
-{
-    font-size: 1.1em;
+{   
+    font-size: 0.9em;
+    font-weight: bold;
 }
 
 p
 {
-    font-size: 1.0em;
+    font-size: 0.8em;
 } 
 
-
 /* Section recherche */
+
+
+.filtre
+{
+    margin-right: 80px;
+}
 
 #Filtres ul 
 {
@@ -102,34 +117,100 @@ p
 {
     width: 30px;
     height: 20px;
-    color:#0165c6
+    color:#0065FC;
 }
 
-/* Section hébergements */ 
+/* Section hébergements */
 
+#bloc_section1
+{
+    flex-direction: row;
+}
 #Hébergements 
 {
-    border: 1px grey solid;
+    border: 1px #F2F2F2 solid;
     border-radius: 20px;
+    background-color: #F2F2F2;
+    width: 600px;
 }
 
+.H1_Hébergements
+{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: 35px;
+}
+
+.afficher
+{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
 
 .Hébergements
 {
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: space-between;
+  
 }
 
 .Hébergements img
 {
-    width: 190px;
-    height: 110px;
+    width: 160px;
+    height: 80px;
+} 
+
+#Auberge_la_cannebière
+{    
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: white;
 }
 
+#Hotel_du_port
+{
+    background-color: white;
+    border-radius: 20px;
+}
 
+#Hotel_les_mouettes
+{
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#Hotel_de_la_mer
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#Auberge_le_panier
+{   
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#Hotel_chez_amina
+{
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
 /* ASIDE LES PLUS POPULAIRES */ 
+.populaires
+{
+    border: 1px grey solid;
+    border-radius: 20px;
+    width: 300px;
+}
 
 #les_plus_populaires img 
 {
@@ -138,4 +219,9 @@ p
 } 
 
 
-
+/* SECTION ACTIVITÉS */ 
+.activités img
+{
+    width: 190px;
+    height: 110px;
+}
