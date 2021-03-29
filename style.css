@@ -122,9 +122,10 @@ p
 
 /* Section hébergements */
 
-#bloc_section1
+.section_hébergements
 {
-    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
 }
 #Hébergements 
 {
@@ -138,7 +139,7 @@ p
 {
     margin-top: 30px;
     margin-bottom: 25px;
-    margin-left: 35px;
+    margin-left: 30px;
 }
 
 .afficher
@@ -158,7 +159,10 @@ p
 
 .Hébergements img
 {
-    width: 160px;
+    margin-top: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 150px;
     height: 80px;
 } 
 
@@ -209,11 +213,25 @@ p
 {
     border: 1px grey solid;
     border-radius: 20px;
-    width: 300px;
+    width: 285px;
+    height: 450px; 
+}
+
+.H1_populaires 
+{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+}
+
+.Hotel_soleil
+{
+    float: left;
 }
 
 #les_plus_populaires img 
 {
+    border-radius: 20px;
     width: 190px;
     height: 110px;
 } 
