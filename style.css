@@ -60,12 +60,14 @@ nav a
 {
     color: black;
     text-decoration: none;
+    cursor: pointer;
 }
 
 nav a:hover
 {
     color: #0065FC; 
-    border-top: 3px solid #0065FC; 
+    border-top: 2px solid #0065FC; 
+    padding-top: 27px;
 }    
 
 #inscrire 
@@ -80,7 +82,8 @@ h1
 {   
     color: black; 
     font-weight: bolder;
-    font-size: 1.1em; 
+    font-stretch: extra-expanded;
+    font-size: 1.3em; 
 }
 
 h2
@@ -96,50 +99,170 @@ p
 
 /* Section recherche */
 
-
-.filtre
+.recherche
 {
-    margin-right: 80px;
-}
-
-#Filtres ul 
-{
-    list-style-type: none;
     display: flex;
+    flex-direction: row;
 }
 
-#Filtres li
+.mapmarker 
 {
-    margin-right: 40px;
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2; 
+    font-size: 1.2em; 
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
-#Filtres img 
+.searchfield 
 {
-    width: 30px;
-    height: 20px;
-    color:#0065FC;
+   
+    border-top: solid #f2f2f2 1px;
+    border-bottom: solid #f2f2f2 1px;
+    border-left: none;
+    border-right: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: initial;
+    padding-left: 20px;
+}
+
+.searchbutton
+{
+    
+    width: 100px;
+    height: 50px;
+    background-color: #0065fc;
+    font-family: "Raleway"; 
+    font-weight: 700;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.filtres
+{
+    font-size: 0.9em;
+    padding-right: 20px;
+    margin-top: 20px;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-items: flex-start; 
+}
+
+.titre_filtre
+{
+    font-weight: bold;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+
+.bordure_icone
+{
+    border: solid #deebff 1px;
+    background-color: #deebff;
+    border-radius: 50%;
+    padding: 12px 7px 12px 7px;
+    margin-left: -2px;
+}
+
+.filtres i 
+{
+    color: #0065FC;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-top: 4px;
+    margin-left: -5px;
+}
+
+.filtres a 
+{
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#eco, 
+#famille,
+#romantique,
+#animaux
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 2px #e0e0e0 solid;
+    border-radius: 30px;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 8px;  
+    padding-bottom: 0px;
+}
+
+.intitule_filtres
+{  
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 12px;
+}
+
+.informations
+{
+    display: flex; 
+    flex-direction: row;
+    align-items:center;
+}
+
+.informations i
+{
+    float: left;
+    margin-right: 12px;
+    font-size: 0.8em;
+    border: solid #f2f2f2 2px;
+    border-radius: 50%;
+    color: #0065fc;
+    padding: 0.35em 0.75em;
 }
 
 /* Section hébergements */
 
-.section_hébergements
+.section_hebergements
+{
+    display: flex; 
+    flex-direction: row;
+}
+
+.hebergements
 {
     display: flex;
     justify-content: space-between;
 }
-#Hébergements 
+
+#hebergementprincipale 
 {
     border: 1px #F2F2F2 solid;
     border-radius: 20px;
     background-color: #F2F2F2;
-    width: 600px;
+    width: 65%; 
 }
 
-.H1_Hébergements
+.titre_hebergements
 {
     margin-top: 30px;
     margin-bottom: 25px;
     margin-left: 30px;
+    font-weight: bold;
 }
 
 .afficher
@@ -149,25 +272,46 @@ p
     margin-left: 40px;
 }
 
-.Hébergements
+.hebergements
 {
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-  
 }
 
-.Hébergements img
+.hebergements a 
+{
+    text-decoration: none;
+}
+ 
+
+.hebergements img  
 {
     margin-top: 0px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 150px;
-    height: 80px;
+    width: 180px;
+    height: 100px;
+    max-width: 100%;
 } 
+
+.etoilebleue
+{
+    color: #0065FC; 
+    font-size: 0.8em;
+}
+
+figure  
+{
+    width: 226px; 
+    height: 188px; 
+    border: 1px solid white; 
+    border-radius: 20px; 
+    margin-right: 15px;
+}
 
 #Auberge_la_cannebière
 {    
+    padding: 0.1em 0.5em;
     margin-left: 20px;
     border-radius: 20px;
     background-color: white;
@@ -175,12 +319,15 @@ p
 
 #Hotel_du_port
 {
-    background-color: white;
+    padding: 0.1em 0.5em;    
     border-radius: 20px;
+    background-color: white;
+    margin-left: 20px;
 }
 
 #Hotel_les_mouettes
 {
+    padding: 0.1em 0.5em;
     margin-right: 20px;
     background-color: white;
     border-radius: 20px;
@@ -188,6 +335,7 @@ p
 
 #Hotel_de_la_mer
 {
+    padding: 0.1em 0.5em;
     margin-top: 20px;
     margin-left: 20px;
     background-color: white;
@@ -196,6 +344,7 @@ p
 
 #Auberge_le_panier
 {   
+    padding: 0.1em 0.5em;
     margin-top: 20px;
     background-color: white;
     border-radius: 20px;
@@ -203,15 +352,20 @@ p
 
 #Hotel_chez_amina
 {
+    padding: 0.1em 0.5em;
     margin-right: 20px;
     margin-top: 20px;
     background-color: white;
     border-radius: 20px;
 }
+
 /* ASIDE LES PLUS POPULAIRES */ 
+
 .populaires
 {
-    border: 1px grey solid;
+    border: 1px #F2F2F2 solid;
+    border-radius: 20px;
+    background-color: #F2F2F2;
     border-radius: 20px;
     width: 285px;
     height: 450px; 
@@ -222,6 +376,13 @@ p
     margin-top: 30px;
     margin-bottom: 25px;
     margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#chart
+{
+    margin-right: 30px;
 }
 
 .Hotel_soleil
@@ -229,14 +390,37 @@ p
     float: left;
 }
 
+.Au_coeur
+{
+    float: left;
+}
+
+.Hotel_tout
+{
+    float: left;
+}
+
 #les_plus_populaires img 
 {
     border-radius: 20px;
-    width: 190px;
-    height: 110px;
+    width: 150px;
+    height: 80px; 
 } 
 
+#hotel_soleil
+{
+ 
+}
 
+#au_coeur
+{
+  
+}
+
+#hotel_tout
+{
+   
+}
 /* SECTION ACTIVITÉS */ 
 .activités img
 {

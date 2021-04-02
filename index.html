@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2897f175fe.js" crossorigin="anonymous"></script>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
     </style>
@@ -32,72 +33,88 @@
           <h1>Trouvez votre hébergement pour des <strong>vacances de rêve</strong></h1> 
           <p>En plein centre ville ou en pleine nature</p> 
           
-          <!--icône map + barre de recherche-->
-          <i class="fas fa-map-marker-alt"><img src="map-marker-alt-solid.svg" alt="icone map" height= "17px"></i>  <input type="search" id="site-search" name="q"
-       aria-label="Search through site content"> <button>Rechercher</button>
-         
-          <!--Filtres-->
-        
-         <div id="Filtres">
-          <ul>
-            <span class="filtre">Filtres</span>
-            <li><img src="money-bill-wave-solid.svg" alt="icone billet">Économique</li> 
-            <li><img src="child-solid.svg" alt="icone famille"> Familial</li>
-            <li><img src="heart-solid.svg" alt="icone romantic"> Romantique</li>
-            <li><img src="dog-solid.svg" alt="icone chien">Animaux autorisés</li>
-         </ul>    
-         </div> 
+          <!--icone map + barre de recherche-->
+      <span class="recherche"> 
 
-          <p><img src="info-solid.svg" alt="icone info" height="14px" width="4px" ></i> Plus de 500 logements sont disponibles dans cette ville</p>   
+        <span class="mapmarker">
+          <i class="fas fa-map-marker-alt"></i>
+        </span> 
+          <input class="searchfield" type="search" placeholder="Marseille, France">
+          <input class="searchbutton" type="submit" value="Rechercher"> 
+          
+        </span>
+         
+          <!-- section filtres-->
+        
+       
+          <div class="filtres">
+            <span class="titre_filtre">Filtres</span>
+            <span id="eco"><a href="#"><span class="bordure_icone"><i class="fas fa-money-bill-wave"></i></span><span class="intitule_filtres">Économique</span></a></span>
+            <span id="famille"><a href="#"><span class="bordure_icone"><i class="fas fa-child"></i></span><span class="intitule_filtres">Familial</span></a></span>
+            <span id="romantique"><a href="#"><span class="bordure_icone"><i class="fas fa-heart"></i></span><span class="intitule_filtres">Romantique</span></a></span>
+            <span id="animaux"><a href="#"><span class="bordure_icone"><i class="fas fa-dog"></i></span><span class="intitule_filtres">Animaux autorisés</span></a></span>
+          </div>  
+
+        
+
+          <p class="informations"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>   
 
 
   </section> 
 
         <!--SECTION HEBERGEMENTS-->
 
-  <section class="section_hébergements"> 
+  <section class="section_hebergements"> 
  
     <article>
    
-  <div id="Hébergements"> 
-    <h1 class="H1_Hébergements">Hébergements à Marseille</h1>   
+  <div id="hebergementprincipale"> 
+    <h1 class="titre_hebergements">Hébergements à Marseille</h1>   
 
     
-  <div class="Hébergements">
-     
-    <span id="Auberge_la_cannebière">
-    <p><img src="images/Aubergelacannebièresmall.jpg" alt="Auberge la Cannebière"></br>
-      <strong>Auberge la Cannebière</strong></br> 
-    Nuit à partir de <strong>25€</strong></p> 
-    </span>  
+  <div class="hebergements">
+    
+    <figure id="Auberge_la_cannebière">
+    <a href="#" class="carte">
+    <img src="images/Aubergelacannebièresmall.jpg" alt="Auberge la Cannebière"></a></br>
+     <p><strong>Auberge la Cannebière</strong></br> 
+    Nuit à partir de <strong>25€</strong></br></p>  
+    <span class="etoilebleue"><i class="fas fa-star"></i><!--étoile bleue-->
+      <i class="fas fa-star"></i><!--étoile bleue-->
+      <i class="fas fa-star"></i><!--étoile bleue-->
+      <i class="fas fa-star"></i><!--étoile bleue-->
+    </span>
+    <i class="fas fa-star" id="grise1"></i>
+    </figure> 
+   
     
 
     <span id="Hotel_du_port">
-    <p><img src="images/Hotelduport.jpg" alt="Hôtel du port"></br>
+    <p><img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du Port"></br>
       <strong>Hôtel du port</strong></br> 
     Nuit à partir de <strong>52€</strong></br></p>   
   </span>
 
     <span id="Hotel_les_mouettes">
-    <p><img src="images/Hotellesmouettes.jpg" alt="Hôtel les mouettes"></br>
+    <p><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les Mouettes"></br>
         <strong>Hôtel les mouettes</strong></br> 
       Nuit à partir de <strong>76€</strong></br></p>   
     </span> 
 
     <span id="Hotel_de_la_mer">  
-    <p><img src="images/Hoteldelamer.jpg" alt="Hôtel de la mer"></br>
+    <p><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer"></br>
         <strong>Hôtel de la mer</strong></br> 
       Nuit à partir de <strong>46€</strong></br></p> 
     </span>
 
     <span id="Auberge_le_panier">
-    <p><img src="images/Aubergelepanier.jpg" alt="Auberge le panier"></br>
+    <p><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Pannier"></br>
         <strong>Auberge le panier</strong></br> 
       Nuit à partir de <strong>23€</strong></br></p> 
     </span>
 
     <span id="Hotel_chez_amina">  
-    <p><img src="images/Hotelchezamina.jpg" alt="Hôtel chez Amina"></br>
+    <p><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"></br>
         <strong>Hôtel chez Amina</strong></br> 
       Nuit à partir de <strong>96€</strong></br></p> 
     </span>
@@ -112,17 +129,25 @@
 
        <div class="populaires">
 
-         <h1 class="H1_populaires">Les plus populaires <img src="chart-line-solid.svg" alt="icone tendance" height="20px" width="30px"></h1> 
+         <h1 class="H1_populaires">Les plus populaires <span id="chart"><img src="chart-line-solid.svg" alt="icone tendance" height="20px" width="30px"></span></h1> 
 
           <div id="les_plus_populaires">
-            <p><img src="images/Hotellesoleildumatin.jpg" class="Hotel_soleil" alt="Hôtel le soleil du matin"></br><strong>Hôtel Le soleil du matin</strong></br> 
+            
+            <span id="hotel_soleil"> 
+             <p><img src="images/Hotellesoleildumatin.jpg" class="Hotel_soleil" alt="Hôtel le soleil du matin"></br><strong>Hôtel Le soleil du matin</strong></br> 
              Nuit à partir de <strong>128€</strong></br></p> 
-
-            <p><img src="images/Aucoeurdeleau.jpg" alt="Au coeur de l'eau"></br><strong>Au coeur de l'eau Chambres d'hôte</strong></br> 
+            </span>
+            
+            <span id="au_coeur">
+            <p><img src="images/Aucoeurdeleau.jpg" class="Au_coeur" alt="Au coeur de l'eau"></br><strong>Au coeur de l'eau Chambres d'hôte</strong></br> 
              Nuit à partir de <strong>71€</strong></br></p> 
+            </span>
 
-            <p><img src="images/Hoteltoutbleu.jpg" alt="Hôtel tout bleu tout blanc"></br><strong>Hôtel Tout bleu et blanc</strong></br> 
+            <span id="hotel_tout">
+            <p><img src="images/Hoteltoutbleu.jpg" class="Hotel_tout" alt="Hôtel tout bleu tout blanc"></br><strong>Hôtel Tout bleu et blanc</strong></br> 
              Nuit à partir de <strong>68€</strong></br></p> 
+            </span>
+
        </div>
   
    </div>
