@@ -138,7 +138,7 @@ p
 {
     
     width: 100px;
-    height: 50px;
+    height: 40px;
     background-color: #0065fc;
     font-family: "Raleway"; 
     font-weight: 700;
@@ -164,7 +164,7 @@ p
 .titre_filtre
 {
     margin-right: 35px;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 .bordure_icone
@@ -252,7 +252,8 @@ p
     border-radius: 20px;
     background-color: #F2F2F2;
     margin-right: 20px;
-    width: 850px; 
+    width: 67%; 
+    height: 650px;
 }
 
 .titre_hebergements
@@ -267,7 +268,17 @@ p
 .hebergements
 {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
+    padding-left: 2px;
+    padding-right: 2px;
+    /*flex-flow: row wrap;*/
+}
+
+#ligne1, 
+#ligne2
+{
+    display: flex;
+    flex-direction: row;
 }
 
 .hebergements a
@@ -320,23 +331,23 @@ p
 
 #Auberge_la_cannebière
 {    
-  margin-left: 30px;
-  margin-right: 5px;
+  margin-right: 2px;
 }
 
 #Hotel_du_port
 {
-  
+  margin-right: 2px;
 }
 
 #Hotel_les_mouettes
 {
-  margin-left: -25px;
+  
 }
 
 #Hotel_de_la_mer
 {
-   margin-left: 30px;
+    
+
 }
 
 #Auberge_le_panier
@@ -346,7 +357,7 @@ p
 
 #Hotel_chez_amina
 {
-    
+  margin-right: 30px;   
 }
 
 .afficher
@@ -430,6 +441,12 @@ p
 
 
 /* SECTION ACTIVITÉS */ 
+.activites_marseille
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .activités
 {
     display: flex;
