@@ -43,6 +43,7 @@ nav
 {   
     font-size: 0.9em;
     margin-top: 18px;
+    display: flex;
     flex-direction: row;
 }
 
@@ -77,17 +78,17 @@ nav ul a:hover
 {
     font-weight: bolder;
     color: #0065FC; 
-    display: flex;
+    padding-top: 14px;
     margin-left: 40px;
 }
-
+/*
 h1 
 {   
     color: black; 
     font-weight: bolder;
     font-stretch: extra-expanded;
     font-size: 1.3em; 
-}
+}*/
 
 h2
 {   
@@ -122,13 +123,11 @@ p
     align-items: center;
     background-color: #F2F2F2; 
     font-size: 1.2em; 
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
 }
 
-.searchfield 
+.champs_de_recherche 
 {
    
     border-top: solid #f2f2f2 1px;
@@ -141,7 +140,7 @@ p
     padding-left: 20px;
 }
 
-.searchbutton
+.bouton
 {
     
     width: 100px;
@@ -267,18 +266,19 @@ p
     border: 1px #F2F2F2 solid;
     border-radius: 20px;
     background-color: #F2F2F2;
-    margin-right: 15px;
-    width: 66%; 
-    height: 590px;
+    margin-right: 10px;
+    width: 67%; 
+    height: 610px;
    
 }
 
 .titre_hebergements 
 {
     margin-top: 35px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     margin-left: 40px;
     font-weight: bold;
+    font-size: 1.4em;
 }
 
 
@@ -296,11 +296,12 @@ p
 {
     display: flex;
     flex-direction: row;
+    
 }
 
 #ligne2
 {
-    margin-top: 10px;
+    margin-top: 3px;
 }
 
 .hebergements a
@@ -317,7 +318,7 @@ p
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
     width: 100%;
-    height: 110px;
+    height: 105px;
 } 
 
 .etoilebleue
@@ -336,7 +337,7 @@ p
 .hebergements figure  
 {
     padding: 2px 2px 2px 2px;
-    width: 210px;
+    width: 225px;
     height: 180px;
     border: 1px solid white; 
     background-color: white;
@@ -358,14 +359,14 @@ p
     font-weight: bolder;
     font-stretch: ultra-condensed;
     font-size: 1em; 
-    margin-bottom: 3px;
-    margin-top: 0px;
+    margin-bottom: 4px;
+    margin-top: 4px;
     margin-left: 9px;
 }
 
 .prix1
 {
-    margin-top: 2px;
+    margin-bottom: 4px;
     font-size: 0.9em;
     padding-left: 9px;
     
@@ -373,36 +374,36 @@ p
 
 #Auberge_la_cannebiere
 {    
-  margin-left: 40px;
- 
+  margin-left: 35px;
+  margin-right: 2px;
 }
 
 #Hotel_du_port
 {
-  margin-left: 5px;
+  margin-right: 2px;
 
 }
 
 #Hotel_les_mouettes
 {
-
-  margin-left: 5px;
+  margin-right: 35px;
 }
 
 #Hotel_de_la_mer
 {
-    margin-left: 40px;
+    margin-left: 35px;
+    margin-right: 2px;
 
 }
 
 #Auberge_le_panier
 {   
-    margin-left: 5px;
+    margin-right: 2px;
 }
 
 #Hotel_chez_amina
 {
-    margin-left: 5px; 
+    margin-left: 35px; 
 }
 
 .afficher
@@ -423,8 +424,8 @@ p
     border-radius: 20px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 375px;
-    height: 590px; 
+    width: 385px;
+    height: 610px; 
 }
 
 .populaires h3
@@ -432,30 +433,29 @@ p
     font-weight: bolder;
     font-stretch: ultra-condensed;
     font-size: 1em; 
-    margin-right: 30px;
+    padding-top: -2px;
+    padding-left: 20px;
+    padding-right: 40px;
+    margin-bottom: 8px;
+}
+
+.prix2
+{
+    padding-left: 20px;
+    padding-right: 40px;
+    font-size: 0.85em;
 }
 
 .titre_populaires 
 {
     margin-top: 35px;
-    margin-bottom: 27px;
+    margin-bottom: 20px;
     margin-left: 30px; 
-    font-size: 1.2em;
+    font-size: 1.4em;
     display: flex;
     justify-content: space-between;
 }
 
-.titre_carte2
-{
-    font-weight: bolder;
-    font-stretch: ultra-condensed;
-    font-size: 1.1em; 
-
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 17px;
-    text-align: center;
-}
 
 .description2 
 {
@@ -463,26 +463,27 @@ p
     display: flex;
     flex-direction: column;
     text-align: justify;
+    padding-bottom: 30px;
 }
 
 .etoilebleue2 
 {
     color: #0065FC; 
     font-size: 0.6em;
-  
+    padding-left: 20px;
 }
 
 .grise2
 {
     color:  #e0e0e0;
-    font-size: 0.6em;
+    font-size: 1em;
     
 }
 
 #chart i 
 {
     margin-right: 30px; 
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .populaires img
@@ -503,7 +504,7 @@ p
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     width: 125px;
-    height: 130px; 
+    height: 135px; 
 } 
 
 .populaires figure
@@ -511,7 +512,7 @@ p
     margin-left: 30px;
     margin-top: 4px;
     width: 315px;
-    height: 130px;
+    height: 135px;
     border: 1px solid white; 
     background-color: white;
     border-radius: 15px; 
@@ -539,7 +540,8 @@ p
 
 #titre_activites
 {
-    margin-top: 50px;
+    margin-top: 65px;
+    margin-bottom: 2px;
 }
 
 .activites a
@@ -558,10 +560,10 @@ p
 
 #vieuxport 
 {
-   margin-left: -5px;
-   margin-right: 8px; 
-   width: 270px;
-   height: 396px;
+   margin-left: -8px;
+   margin-right: 50px; 
+   width: 280px;
+   height: 416px;
    border: 1px solid white; 
    background-color: white;
    border-radius: 15px; 
@@ -573,19 +575,19 @@ p
 
 #vieuxport img
 {
-    width: 270px;
-    height: 360px;
-    margin-top: -13px;
+    width: 280px;
+    height: 365px;
+    
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
 
 #calanques
 {
-   margin-left: 8px;
-   margin-right: 8px; 
-   width: 270px;
-   height: 396px;
+   margin-left: 50px;
+   margin-right: 50px; 
+   width: 280px;
+   height: 416px;
    border: 1px solid white; 
    background-color: white;
    border-radius: 15px; 
@@ -597,18 +599,17 @@ p
 
 #calanques img
 {
-    width: 270px;
-    height: 360px;
-    margin-top: -13px;
+    width: 280px;
+    height: 365px;
+    
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
 
 #pomegues
 {
-   width: 270px;
-   height: 200px;
-
+   width: 280px;
+   height: 220px;
    border: 1px solid white; 
    background-color: white;
    border-radius: 15px; 
@@ -616,22 +617,22 @@ p
    border-right: none; 
    border-left: none;
    box-shadow:2px 2px 7px #e0e0e0;
+   margin-top: 17px;
 }
 
 #pomegues img
 {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    margin-top: -13px;
-    width: 270px; 
-    height: 160px;
+    width: 280px; 
+    height: 170px;
 }
 
 #frioul
 {
-    width: 270px;
-    height: 136px;
-    margin-top: 59px;
+    width: 280px;
+    height: 156px;
+    margin-top: 38px;
     border: 1px solid white; 
     background-color: white;
     border-radius: 15px; 
@@ -645,15 +646,14 @@ p
 {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    margin-top: -13px;
-    width: 270px; 
-    height: 100px;
+    width: 280px; 
+    height: 105px;
 }  
 
 #notredamede
 {
-   width: 270px;
-   height: 160px;
+   width: 280px;
+   height: 180px;
    border: 1px solid white; 
    background-color: white;
    border-radius: 15px; 
@@ -661,22 +661,22 @@ p
    border-right: none; 
    border-left: none;
    box-shadow:2px 2px 7px #e0e0e0;
+   margin-top: 17px;
 }
 
 #notredamede img
 {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    margin-top: -13px;
-    width: 270px;
-    height: 125px;
+    width: 280px;
+    height: 130px;
 } 
 
 #longchamps
 {
-   width: 270px;
-   height: 175px;
-   margin-top: 58px;
+   width: 280px;
+   height: 195px;
+   margin-top: 38px;
    border: 1px solid white; 
    background-color: white;
    border-radius: 15px; 
@@ -690,9 +690,8 @@ p
 {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    margin-top: -13px;
-    width: 270px;
-    height: 140px;
+    width: 280px;
+    height: 145px;
 } 
 
 /*FOOTER*/ 
@@ -723,11 +722,11 @@ p
 
 #a_propos
 {
-    margin-right: 125px;
+    margin-right: 172px;
 }
 
 #nos_hebergements
 {
-    margin-right: 215px;
+    margin-right: 257px;
 }
 
