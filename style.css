@@ -241,7 +241,7 @@ nav ul a:hover
     border-radius: 20px;
     background-color: #F2F2F2;
     margin-right: 10px;
-    width: 67%; 
+    width: 66%; 
     height: 610px;
    
 }
@@ -309,7 +309,7 @@ nav ul a:hover
 .hebergements figure  
 {
     padding: 2px 2px 2px 2px;
-    width: 218px;
+    width: 220px;
     height: 185px;
     border: 1px solid white; 
     background-color: white;
@@ -695,53 +695,91 @@ nav ul a:hover
 }
 
 /*Partie Responsive mobile*/ 
-@media all and (max-width: 699px) 
+@media all and (max-width: 1000px) 
 {
+    body
+    {
+       width: auto; 
+       margin: 0px; 
+       padding: 0px; 
+       box-sizing: border-box; 
+    }
+
     #bloc_page 
     {   
-        width: auto;
-    }
+        margin: 0px;
+        padding: 0px;
+    } 
     
     /* Header */
     header 
     {
-       width: 100%;
+       flex-direction: column; 
+       margin: 0px; 
+       padding: 0px;
     } 
+
+    #logo_reservia
+    {
+        margin-top: 20px; 
+    }
+
+    #logo_reservia img 
+    {
+        margin-left: 20px; 
+    } 
+
+    #ancres 
+    {
+        flex-direction: column-reverse; 
+        flex-wrap: wrap; 
+        width: 100%; 
+    }
     /* Navigation */
     nav
     {   
-        display: flex; 
-        flex-direction: row-reverse; 
-        flex-wrap: wrap;
-        text-align: center; 
-        margin: 0px; 
-        padding: 0px; 
+        width: 100%; 
     }
     
     nav ul 
     {   
-     
-       display: flex; 
-       
+       width: 100%;
+       padding: 0px; 
     }   
     
-    nav ul a:hover
+    nav li
     {
-        color: #0065FC; 
-        border-bottom: 2px solid #0065FC; 
-        border-top: none;
+        width: 50%; 
+        border-bottom: 3px solid #f2f2f2; 
+        padding-bottom: 10px; 
+        margin: 0px; 
+        text-align: center; 
+    }
+
+    nav a:hover
+    {
+        padding-top: 37px;
     }    
     
+ nav li a:hover 
+   {
+        border-top: none; 
+   }
+
+    nav li:hover 
+ {   
+        border-color: #0065FC; 
+        color: #0065FC;  
+ }
     #inscrire 
 {
-    display: flex;
-    font-weight: bolder;
-    color: #0065FC; 
-    /*padding-top: 14px;
-    margin-left: 40px;*/
+    position: absolute; 
+    top: 40px; 
+    right: 20px; 
 }
 
 /*Section recherche*/
+
 
 .filtres
 {
