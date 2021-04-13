@@ -2,7 +2,10 @@ body
 {
     font-family: 'Raleway';
     min-width: 1300px;
+    max-width: 100%;
+    font-size: 100%;
 }
+
 
 #bloc_page 
 {   
@@ -16,7 +19,7 @@ header
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
     margin: 10px 20px 10px 20px; 
 }
 
@@ -24,14 +27,14 @@ header
 {
     margin-top: 18px;
     margin-left: -10px;
-    width: 120px;
-    height: 40px;
+    width: 9em;
+    height: 3em;
 }
 
 /* Navigation */
-nav
+nav 
 {   
-    font-size: 0.9em;
+    font-size: 1em;
     margin-top: 18px;
     display: flex;
     flex-direction: row;
@@ -48,6 +51,7 @@ nav li
     color:black;
     margin-right: 15px;
     margin-left: 40px;
+
 }
 
 nav a
@@ -76,7 +80,9 @@ nav ul a:hover
 
 .titre_recherche
 {
-    line-height: 1;
+    width: 100%; 
+    justify-content: center;
+
 }
 
 .recherche
@@ -128,7 +134,7 @@ nav ul a:hover
 
 .filtres
 {
-    font-size: 1.0em;
+    font-size: 1.2em;
     font-weight: bolder;
     padding-right: 20px;
     margin-top: 20px;
@@ -140,7 +146,7 @@ nav ul a:hover
 
 .titre_filtre
 {
-    font-size: 1.0em;
+    font-size: 1.1em;
     font-weight: bolder;
     margin-right: 35px;
 }
@@ -165,17 +171,11 @@ nav ul a:hover
     font-weight: 700;
     cursor: pointer;
     text-decoration: none; 
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
 }
 
 .filtres a:hover 
 {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    color: #0065FC;
 }
 
 #eco, 
@@ -252,7 +252,7 @@ nav ul a:hover
     margin-bottom: 10px;
     margin-left: 40px;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 .hebergements
@@ -707,53 +707,68 @@ nav ul a:hover
 
     #bloc_page 
     {   
-        margin: 0px;
-        padding: 0px;
+        margin: 20px;
+        padding: 20px;
     } 
     
     /* Header */
     header 
     {
-       flex-direction: column; 
+       /*flex-direction: column;*/
+       flex-direction: row; 
+       flex-wrap: wrap;
        margin: 0px; 
        padding: 0px;
+       width: 100%; 
+       
     } 
 
-    #logo_reservia
+    #logo_reservia img
     {
+        position: relative;
+        margin-left: 40px; 
         margin-top: 20px; 
+        width: 40vw;
+        height: 150px; 
     }
 
-    #logo_reservia img 
+    /*#logo_reservia img 
     {
         margin-left: 20px; 
-    } 
+        
+    } */
 
-    #ancres 
+    #ancres /*:nth-child(2)*/
     {
-        flex-direction: column-reverse; 
-        flex-wrap: wrap; 
         width: 100%; 
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        
     }
     /* Navigation */
     nav
     {   
+        flex-direction: row-reverse;
         width: 100%; 
+        font-size: 3.1em;
     }
     
     nav ul 
     {   
        width: 100%;
        padding: 0px; 
+     
     }   
     
     nav li
     {
         width: 50%; 
-        border-bottom: 3px solid #f2f2f2; 
-        padding-bottom: 10px; 
+        border-bottom: 7px solid #f2f2f2; 
+        padding-bottom: 50px; 
         margin: 0px; 
         text-align: center; 
+        position: relative;
     }
 
     nav a:hover
@@ -774,17 +789,100 @@ nav ul a:hover
     #inscrire 
 {
     position: absolute; 
-    top: 40px; 
-    right: 20px; 
+    top: 60px; 
+    right: -200px;
 }
 
 /*Section recherche*/
+    .titre_recherche
+{
+    font-size: 3em;
+    line-height: 1.5em;
+    word-spacing:normal;
+    text-align: justify;
+   
+}
 
+.mapmarker 
+{
+    margin-top: 40px; 
+    width: 19vw;
+    height: 17vw;
+    font-size: 3.8em; 
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.champs_de_recherche 
+{
+    margin-top: 40px;
+    font-size: 3em;
+    font-weight: bolder; 
+    border-top: 3px solid #F2F2F2;
+    border-bottom: 3px solid #F2F2F2;
+    padding-left: 20px; 
+    padding-inline-start: 50px;
+    width: 94vw;
+}
+
+.bouton
+{
+    margin-top: 40px;
+    width: 18vw;
+    height: 17vw;
+    background-color: #0065fc;
+    font-family: "Raleway"; 
+    font-weight: 700;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
 
 .filtres
 {
-    flex-flow: nowrap;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
 }
+
+.titre_filtre
+{
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin-right: 35px;
+    width: 100%;
+}
+
+
+.filtres i 
+{
+    color: #0065FC;
+    text-align: center;
+    border: solid #deebff 1px;
+    background-color: #deebff;
+    border-radius: 100%;
+    padding: 13px 7px 0px 7px;
+    margin-left: -1px;
+}
+
+#eco, 
+#famille,
+#romantique,
+#animaux
+{
+    font-size: 2.5em;
+    align-items: center;
+    border: 2px #e0e0e0 solid;
+    border-left: none;
+    border-radius: 85px;
+    width: 48%;
+    height: 16vw;
+    margin-right: 25px;
+}
+
+
+
 
 /* Section hébergements */ 
 .section_hebergements
@@ -794,10 +892,23 @@ nav ul a:hover
     justify-content: space-between;
 }
 
+#plus_populaires
+{
+    width: 100%;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.titre_populaires
+{
+    width: 90%;
+}
+
 #hebergements_principale 
 {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 #ligne1, 
