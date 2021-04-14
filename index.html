@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2897f175fe.js" crossorigin="anonymous"></script>
     <style>
@@ -23,8 +24,8 @@
                                     <li><a href="#titre_activites">Activités</a></li>                                     
                                 </ul>   
                               </div>  
-                                        <a href="#" id="inscrire">S'inscrire</a>         
-                                     
+                                      <a href="#" id="inscrire">S'inscrire</a>       
+                                        
                             </nav>
                          
   </header> 
@@ -43,14 +44,17 @@
         </span> 
           <input class="champs_de_recherche" type="search" placeholder="Marseille, France">
           <input class="bouton" type="submit" value="Rechercher"> 
+          <button id="bouton_loupe" type="submit" value="Rechercher"><span id="icone_loupe"><i class="fas fa-search" aria-hidden="true"></i></span>
+          </button>
           
         </span>
          
           <!-- section filtres-->
         
        
-          <div class="filtres">
+          
             <p class="titre_filtre">Filtres</p>
+            <div class="filtres">
             <span id="eco"><a href="#"><i class="fas fa-money-bill-wave"></i><span class="intitule_filtres">Économique</span></a></span>
             <span id="famille"><a href="#"><i class="fas fa-child"></i><span class="intitule_filtres">Familial</span></a></span>
             <span id="romantique"><a href="#"><i class="fas fa-heart"></i><span class="intitule_filtres">Romantique</span></a></span>
