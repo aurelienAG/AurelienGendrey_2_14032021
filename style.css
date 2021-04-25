@@ -2,13 +2,13 @@ body
 {
     font-family: 'Raleway';
     margin: auto;
+    max-width: 1400px;
     font-size: 100%;
 }
 
 #bloc_page 
 {   
     margin: 0px 20px 0px 20px; 
-    max-width: 1440px;
 }
 
 /* Header */
@@ -18,7 +18,7 @@ header
     flex-direction: row;
     justify-content: space-between; 
     align-items: center; 
-    padding: 30px 0px 20px 0px; 
+    padding: 15px 0px 15px 0px; 
     margin-right: 20px;
 }
 
@@ -32,19 +32,12 @@ header img
 }
 
 /* Navigation */
-nav 
-{   
-   /*padding-left: 15px; 
-   padding-right: 15px;*/
-}
-
 nav ul
 {   
     list-style-type: none; 
     display: flex; 
     flex-direction: row;
-    justify-content: space-between;
-  
+    justify-content: space-between; 
 }   
 
 nav li
@@ -78,12 +71,6 @@ nav ul a:hover
 
 /* Section recherche */
 
-.titre_recherche
-{
-
-    /*justify-content: center;*/
-}
-
 .recherche
 {
     display: flex;
@@ -114,14 +101,14 @@ nav ul a:hover
     font-weight: bold;
     font-size: initial;
     padding-left: 20px;
+    height: 50px;
 }
 
 .bouton
 {
    
-    width: 100px;
+    width: 7vw;
     min-width: 10px;
-    height: 45px;
     background-color: #0065fc;
     font-family: "Raleway"; 
     font-weight: 700;
@@ -145,7 +132,7 @@ nav ul a:hover
     padding-right: 20px; 
     margin-top: 20px;
     display: flex; 
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     /*justify-content: space-between;*/
 }
@@ -154,19 +141,21 @@ nav ul a:hover
 {
     font-weight: bolder;
     margin-right: 25px;
+    margin-top: 10px;
+    font-size: 1.2em;
 }
 
 .filtres i 
 {
     color: #0065FC;
-    /*width: 30px;
-    height: 30px;*/
-    font-size: 1em;
+    width: 30px;
+    height: 30px;
+    font-size: 1.1em;
     text-align: center;
     border: solid #deebff 1px;
     background-color: #deebff;
     border-radius: 100%;
-    padding: 15px 15px 15px 15px;  
+    padding: 15px 9px 0px 9px;  
 }
 
 .filtres a 
@@ -194,14 +183,15 @@ nav ul a:hover
     border-left: none;
     border-radius: 40px;
     height: 45px;
-    margin-right: 25px;
+    margin-right: 20px;
+    margin-top: 10px; 
 }
 
 .intitule_filtres
 {  
     padding-right: 20px;
     padding-left: 12px;
-    /*padding-bottom: 12px; */
+    font-size: 1.2em;
 }
 
 .informations
@@ -216,13 +206,12 @@ nav ul a:hover
 
 .informations i
 {
-    float: left;
     margin-right: 5px;
-    font-size: 0.8vw;
+    font-size: 0.7em;
     border: solid #e0e0e0 1px;
     border-radius: 100%;
     color: #0065fc;
-    padding: 4px 7px 4px 7px;
+    padding: 5px 9px 5px 9px;
 }
 
 /* Section hébergements */
@@ -270,6 +259,7 @@ nav ul a:hover
     border-top-right-radius: 18px;
     height: 59%; 
     width: 100%;
+    object-fit: cover;
 } 
 
 .etoilebleue
@@ -291,7 +281,7 @@ nav ul a:hover
     padding: 2px 2px 2px 2px;
     width: 18.5vw;
     height: 14vw;
-    min-width: 200px;
+    min-width: 180px;
     min-height: 160px;
     margin: 5px 0px 30px 0px;
     border: 1px solid white; 
@@ -343,7 +333,6 @@ nav ul a:hover
 .titre_populaires 
 {
     margin: 35px 30px 25px 30px;
-    /*font-size: 1.5vw;*/
     display: flex;
     justify-content: space-between;
 } 
@@ -360,7 +349,6 @@ nav ul a:hover
     font-weight: bolder;
     font-stretch: ultra-condensed;
     font-size: 1.2vw;
-    min-width: 1vw;
     padding-left: 20px;
     padding-right: 40px;
     margin-top: 12px;
@@ -370,8 +358,7 @@ nav ul a:hover
 .prix2
 {
     padding-left: 20px;
-    /*padding-right: 40px;*/
-    font-size: 1vw;
+    font-size: 0.8rem;
 }
 
 .description2 
@@ -379,11 +366,12 @@ nav ul a:hover
     display: flex;
     flex-direction: column;
     text-align: justify;
-    padding-bottom: 37px;
 }
 
 .etoilebleue2 
 {
+    position: absolute;
+    bottom: 5px;
     color: #0065FC; 
     font-size: 0.9vw;
     padding-left: 20px;
@@ -410,6 +398,7 @@ nav ul a:hover
     border-bottom-left-radius: 12px;
     width: 40%;
     height: 100%; 
+    object-fit: cover;
 } 
 
 .populaires figure
@@ -425,29 +414,23 @@ nav ul a:hover
     padding: 2px 2px 2px 2px; 
     box-shadow:2px 2px 7px #e0e0e0;
     text-align: justify; 
+    position: relative;
 }
 
 
 /* SECTION ACTIVITÉS */ 
-.activites_marseille
-{
-    /*padding-left: 20px;
-    padding-right: 20px;*/
-}
-
 .activites
 {
     display: flex;
     flex-direction: row; 
     justify-content: space-between;
-    /*margin: 15px 15px 15px 15px;*/
+    margin: 20px 5px 15px 5px;
 }
 
 #titre_activites
 {
     margin-top: 65px;
     margin-bottom: 2px;
-   /* margin-left: 15px;*/
 }
 
 .activites a
@@ -457,16 +440,15 @@ nav ul a:hover
     cursor: pointer;
 } 
 
-.activites h4
+.activites h3
 {
+    font-size: 1rem;
     margin-top: 10px;
-    /*margin-left: 14px;*/
+    margin-left: 17px;
 }
 
 #vieuxport 
 {
-   /*margin-left: -8px;
-   margin-right: 40px;*/ 
    width: 22vw;
    height: 416px;
    border: 1px solid white; 
@@ -484,6 +466,7 @@ nav ul a:hover
     height: 88%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+    object-fit: cover;
 }
 
 #pomegues_frioul,
@@ -495,9 +478,6 @@ nav ul a:hover
 }
 #calanques
 {
-
-   /*margin-left: 40px;
-   margin-right: 40px;*/ 
    width: 22vw;
    height: 416px;
    border: 1px solid white; 
@@ -515,6 +495,7 @@ nav ul a:hover
     height: 88%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+    object-fit: cover;
 }
 
 #pomegues
@@ -536,13 +517,13 @@ nav ul a:hover
     border-top-left-radius: 15px;
     width: 100%; 
     height: 75%;
+    object-fit: cover;
 }
 
 #frioul
 {
     width: 22vw;
     height: 156px;
-    /*margin-top: 38px;*/
     border: 1px solid white; 
     background-color: white;
     border-radius: 15px; 
@@ -558,6 +539,7 @@ nav ul a:hover
     border-top-left-radius: 15px;
     width: 100%; 
     height: 68%;
+    object-fit: cover;
 }  
 
 #notredamede
@@ -580,13 +562,13 @@ nav ul a:hover
     border-top-left-radius: 15px;
     width: 100%;
     height: 72%;
+    object-fit: cover;
 } 
 
 #longchamps
 {
    width: 22vw;
    height: 195px;
-   /*margin-top: 38px;*/
    border: 1px solid white; 
    background-color: white;
    border-radius: 15px; 
@@ -602,6 +584,7 @@ nav ul a:hover
     border-top-left-radius: 15px;
     width: 100%;
     height: 74%;
+    object-fit: cover;
 } 
 
 /*FOOTER*/ 
@@ -611,7 +594,7 @@ nav ul a:hover
     display:flex; 
     flex-direction: row; 
     align-items: flex-start;
-    margin-top: 40px; 
+    margin-top: 60px; 
     background-color: #F2F2F2; 
     height: auto;
     width: auto;
@@ -626,7 +609,7 @@ nav ul a:hover
 
 .footer ul
 {
-    /*font-size: 1.1vw;*/
+    font-size: 1.1rem;
     list-style-type: none; 
     line-height: 2.2;
     margin-right: auto;
@@ -640,7 +623,7 @@ nav ul a:hover
 
 #a_propos
 {
-   margin-right: 165px;
+   margin-right: 135px;
 }
 
 #nos_hebergements
@@ -726,14 +709,10 @@ nav ul a:hover
     
 
 /*Section recherche*/
+
     .titre_recherche
 {
-    /*justify-content: center;
-    text-align: justify;   
-    margin-top: -10px;
-    font-size: 1.2em; */
-    font-size: 1.3rem;
-    /*line-height: 1.5em;*/
+   /* font-size: 1.3rem;*/
     padding-left: 5px;
     padding-right: 5px;
 } 
@@ -751,7 +730,7 @@ p
 
 .mapmarker 
 {   
-    height: 45px;
+    height: 50px;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -764,7 +743,7 @@ p
     padding-left: 20px; 
     padding-inline-start: 50px;
     width: 60vw;
-   
+   height: 50px;
 }
 
 .bouton
@@ -775,8 +754,8 @@ p
 #bouton_loupe
 {   
    
-    width: 55px;
-    height: 45px;
+    width: 48px;
+    height: 50px;
     visibility:visible;
     background-color: #0065fc;
     font-family: "Raleway"; 
@@ -789,7 +768,7 @@ p
 
 .filtres
 {
-    display: flex;
+   display: flex;
     flex-wrap: wrap; 
     align-items: center;
     padding-left: 5px;
@@ -944,14 +923,19 @@ p
     margin-right: 0px;
     margin-left: 15px;
     margin-bottom: 10px;
+    font-size: 1.8rem;
 }
 
 #vieuxport, #calanques,#pomegues, #frioul, #notredamede, #longchamps 
 {
-    width: 95%;
+    width: 95vw;
     height: 400px; 
-    margin: 10px 15px 10px 15px;
+    margin: 10px 15px 10px 10px;
+    position: relative; 
 }  
+
+.activites h3
+{position: absolute; bottom: 10px; font-size: 1.2rem;}
 
 #pomegues img, 
 #frioul img, 
@@ -1074,36 +1058,26 @@ p
     margin-top: -30px;
     padding-left: 20px; 
     padding-right: 20px; 
+    line-height: 1.5em;
 } 
 
-p 
-{
-    margin-top: -14px;
-    padding-left: 0px;;
-}
+.titre_recherche {font-size: 0.9em;}
 
-.recherche
-{
-   padding-left: 5px; 
-   padding-right: 10px;
-   padding-top: 10px;
-}
+p{font-size: 1.1em;}
 
 .mapmarker 
 {   
-    height: 45px;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
 }
 
 .champs_de_recherche 
 {  
-    font-weight: bolder; 
-    border-top: 3px solid #F2F2F2;
-    border-bottom: 3px solid #F2F2F2;
+   font-weight: bolder; 
     padding-left: 0px; 
     padding-inline-start: 50px;
-    width: 70vw;
+    width: 90vw;
+    position: relative; 
 }
 
 .bouton
@@ -1115,8 +1089,8 @@ p
 
 #bouton_loupe
 {   
-    width: 70px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     visibility: visible;
     background-color: #0065fc;
     font-family: "Raleway"; 
@@ -1125,7 +1099,8 @@ p
     border-radius: 15px;
     border: none;
     cursor: pointer;
-    margin-right: 15px;
+    position: absolute;   
+    right: 20px;
 }
 
 .filtres
@@ -1137,9 +1112,12 @@ p
 
 .titre_filtre
 {
-    font-size: 1.1em;
+    font-size: 1em;
     width: 100%;
 }
+
+.intitule_filtres
+{font-size: 1em;}
 
 .informations 
 { 
