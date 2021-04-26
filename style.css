@@ -10,7 +10,6 @@ body
 {   
     margin: 0px 20px 0px 20px; 
 }
-
 /* Header */
 header 
 {
@@ -30,7 +29,6 @@ header img
     box-sizing: border-box; 
 
 }
-
 /* Navigation */
 nav ul
 {   
@@ -112,12 +110,14 @@ nav ul a:hover
     background-color: #0065fc;
     font-family: "Raleway"; 
     font-weight: 700;
-    color: white;
+    color: white; 
+    font-size: 1.2vw;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border: none;
     cursor: pointer;
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px; 
 }
 
 #bouton_loupe
@@ -134,7 +134,6 @@ nav ul a:hover
     display: flex; 
     flex-wrap: wrap;
     align-items: center;
-    /*justify-content: space-between;*/
 }
 
 .titre_filtre
@@ -177,7 +176,7 @@ nav ul a:hover
 #animaux
 {
     display: flex;
-    flex-wrap: row;
+    flex-wrap: wrap;
     align-items: center;
     border: 2px #e0e0e0 solid;
     border-left: none;
@@ -213,9 +212,7 @@ nav ul a:hover
     color: #0065fc;
     padding: 5px 9px 5px 9px;
 }
-
 /* Section hébergements */
-
 .section_hebergements
 {
     display: flex; 
@@ -321,9 +318,7 @@ nav ul a:hover
     margin-bottom: 23px;
     margin-left: 40px;
 }
-
 /* ASIDE LES PLUS POPULAIRES */ 
-
 #plus_populaires
 {
     border: 1px #F2F2F2 solid;
@@ -392,7 +387,6 @@ nav ul a:hover
 
 .populaires img 
 {
-    
     float: left;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -416,8 +410,6 @@ nav ul a:hover
     text-align: justify; 
     position: relative;
 }
-
-
 /* SECTION ACTIVITÉS */ 
 .activites
 {
@@ -553,7 +545,6 @@ nav ul a:hover
    border-right: none; 
    border-left: none;
    box-shadow:2px 2px 7px #e0e0e0;
-
 }
 
 #notredamede img
@@ -586,9 +577,7 @@ nav ul a:hover
     height: 74%;
     object-fit: cover;
 } 
-
 /*FOOTER*/ 
-
 .footer 
 {
     display:flex; 
@@ -648,9 +637,7 @@ nav ul a:hover
         margin-right: 0px;
         padding: 5px;
     } 
-
     /* Header */
-    
     header 
     {
        flex-wrap: wrap; 
@@ -671,7 +658,6 @@ nav ul a:hover
         font-weight: bold;
         order: 2;
     }
-    
     /* Navigation */
     nav:nth-child(2) 
     {   
@@ -706,13 +692,14 @@ nav ul a:hover
         border-color: #0065FC; 
         color: #0065FC;  
      }
-    
-
 /*Section recherche*/
+#blocrecherche
+{
+    padding: 0px 15px 0px 15px;
+}
 
     .titre_recherche
 {
-   /* font-size: 1.3rem;*/
     padding-left: 5px;
     padding-right: 5px;
 } 
@@ -737,13 +724,7 @@ p
 
 .champs_de_recherche 
 {  
-    font-weight: bolder; 
-    border-top: 3px solid #F2F2F2;
-    border-bottom: 3px solid #F2F2F2;
-    padding-left: 20px; 
-    padding-inline-start: 50px;
-    width: 60vw;
-   height: 50px;
+    width: 70vw;
 }
 
 .bouton
@@ -753,7 +734,6 @@ p
 
 #bouton_loupe
 {   
-   
     width: 48px;
     height: 50px;
     visibility:visible;
@@ -780,17 +760,12 @@ p
 #romantique,
 #animaux
 {
-    padding: -1px;
     margin-top: 10px;
     margin-right: 8px;
 }
-
-
-
 /* Section hébergements */ 
 .section_hebergements
 {
-   /*width: 100%;*/
    width:auto;
    flex-direction: column-reverse;
 }
@@ -856,10 +831,7 @@ p
 {
     display: flex; 
     align-items: initial;
-    justify-content: center;
     width: 100%; 
-    margin: 0px;
-    border-radius: none; 
     padding-bottom: 25px;
 }
 
@@ -906,11 +878,8 @@ p
 { 
     margin-top: 15px;
     margin-left: 15px;
-    /*font-size: 1em;*/
 }
-
 /*section activités*/ 
-
 .activites 
 {
     flex-direction: column; 
@@ -975,14 +944,11 @@ p
     margin-left: -15px;
     margin-bottom: 0px;
 }
-
-
 } 
 
 /*Partie Responsive Mobile*/ 
 @media all and (max-width: 767px) 
 {
-  
     body
     { 
        margin: 0px; 
@@ -994,16 +960,13 @@ p
         margin-left: 0px; 
         margin-right: 0px;
     } 
-    
     /* Header */
-    
     header 
     {
        flex-wrap: wrap; 
        padding-top: 20px;
        margin-right: 0px;
        width: 100%; 
-       
     } 
 
     header img:nth-child(1)
@@ -1017,7 +980,6 @@ p
         font-weight: bold;
         order: 2;
     }
-    
     /* Navigation */
     nav:nth-child(2) 
     {   
@@ -1061,9 +1023,13 @@ p
     line-height: 1.5em;
 } 
 
-.titre_recherche {font-size: 0.9em;}
+.titre_recherche 
+{
+    font-size: 0.9em;
+    padding-left: 10px; 
+    padding-right: 10px; 
+}
 
-p{font-size: 1.1em;}
 
 .mapmarker 
 {   
@@ -1074,8 +1040,7 @@ p{font-size: 1.1em;}
 .champs_de_recherche 
 {  
    font-weight: bolder; 
-    padding-left: 0px; 
-    padding-inline-start: 50px;
+    padding-left: 20px; 
     width: 90vw;
     position: relative; 
 }
@@ -1089,13 +1054,14 @@ p{font-size: 1.1em;}
 
 #bouton_loupe
 {   
-    width: 50px;
+    width: 45px;
     height: 50px;
     visibility: visible;
     background-color: #0065fc;
     font-family: "Raleway"; 
     font-weight: 700;
     color: white;
+    font-size: 0.9em;
     border-radius: 15px;
     border: none;
     cursor: pointer;
@@ -1120,22 +1086,23 @@ p{font-size: 1.1em;}
 {font-size: 1em;}
 
 .informations 
-{ 
-  padding-left: 10px; 
-  padding-right: 10px;  
-}
+{align-items:baseline;}
 
 .informations i 
 {
-    float: top-left;
     font-size: 0.5em;
 }
 
-/*Section hébergements*/ 
+.informations p
+{
+    font-size: 1em;
+    margin-left: 2px; 
+    padding-top: 5px;
+}
 
+/*Section hébergements*/ 
 .section_hebergements
 {
-   /*width: 100%;*/
    width:auto;
    flex-direction: column-reverse;
 }
@@ -1197,7 +1164,6 @@ p{font-size: 1.1em;}
     align-items: initial;
     width: 100%; 
     margin: 0px;
-    border-radius: none; 
     padding-bottom: 25px;
 }
 
@@ -1237,9 +1203,7 @@ p{font-size: 1.1em;}
     margin-left: 15px;
     font-size: 1em;
 }
-
 /*section activités*/ 
-
 .activites 
 {
     flex-direction: column; 
@@ -1256,7 +1220,7 @@ p{font-size: 1.1em;}
 
 #vieuxport, #calanques,#pomegues, #frioul, #notredamede, #longchamps 
 {
-    width: 90%;
+    width: 92%;
     height: 195px; 
     margin: 10px 15px 10px 15px;
 }  
@@ -1272,9 +1236,7 @@ p{font-size: 1.1em;}
     height: 80%;
     object-fit: cover;
 }
-
 /*FOOTER*/
-
 .footer 
 {
     flex-direction: column;
@@ -1299,5 +1261,4 @@ p{font-size: 1.1em;}
     margin-left: -15px;
     margin-bottom: 0px;
 }
-
 }
