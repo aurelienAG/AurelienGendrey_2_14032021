@@ -42,7 +42,7 @@ nav li
 {
     color:black;
     display: list-item;
-    margin-right: 50px;   
+    margin-right: 50px;
 }
 
 nav a
@@ -90,7 +90,6 @@ nav ul a:hover
 
 .champs_de_recherche 
 {
-   
     border-top: solid #f2f2f2 1px;
     border-bottom: solid #f2f2f2 1px;
     border-left: none;
@@ -104,14 +103,13 @@ nav ul a:hover
 
 .bouton
 {
-   
     width: 7vw;
     min-width: 10px;
     background-color: #0065fc;
     font-family: "Raleway"; 
     font-weight: 700;
     color: white; 
-    font-size: 1.2vw;
+    font-size: 1em;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border: none;
@@ -141,21 +139,33 @@ nav ul a:hover
     font-weight: bolder;
     margin-right: 25px;
     margin-top: 10px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
-.filtres i 
+.filtres i
 {
     color: #0065FC;
-    width: 30px;
-    height: 30px;
     font-size: 1.1em;
     text-align: center;
     border: solid #deebff 1px;
     background-color: #deebff;
     border-radius: 100%;
-    padding: 15px 9px 0px 9px;  
+    position: absolute;   
+    left: -5px;
+    top: -1px;
 }
+
+#eco i
+{
+padding: 14px 13px 14px 13px;}
+#romantique i 
+{padding: 14px 15px 14px 15px;}
+
+#animaux i 
+{padding: 14px 14px 14px 14px;}
+
+#famille i 
+{padding: 14px 17px 14px 17px;}
 
 .filtres a 
 {
@@ -176,21 +186,19 @@ nav ul a:hover
 #animaux
 {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     border: 2px #e0e0e0 solid;
-    border-left: none;
-    border-radius: 40px;
+    border-radius: 50px;
     height: 45px;
-    margin-right: 20px;
-    margin-top: 10px; 
+    margin: 10px 20px 0px 0px;
+    position: relative;
 }
 
 .intitule_filtres
 {  
-    padding-right: 20px;
-    padding-left: 12px;
-    font-size: 1.2em;
+    margin: 0px 20px 0px 55px;
+    font-size: 1em;
 }
 
 .informations
@@ -226,12 +234,12 @@ nav ul a:hover
     border-radius: 20px;
     background-color: #F2F2F2;
     width: 67%;
-    margin-right: 2.1em;
+    margin-right: 2.1em; 
 }
 
 .titre_hebergements 
 {
-    padding: 15px 0px 0px 30px;
+    padding: 15px 0px 0px 25px;
     font-weight: bold;
 }
 
@@ -254,13 +262,14 @@ nav ul a:hover
 {
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
-    height: 59%; 
+    height: 61%; 
     width: 100%;
     object-fit: cover;
 } 
 
 .etoilebleue
 {
+    position:absolute; bottom: 3px;
     color: #0065FC; 
     font-size: 0.9vw;
     margin-left: 9px;
@@ -278,7 +287,7 @@ nav ul a:hover
     padding: 2px 2px 2px 2px;
     width: 18.5vw;
     height: 14vw;
-    min-width: 180px;
+    min-width: 140px;
     min-height: 160px;
     margin: 5px 0px 30px 0px;
     border: 1px solid white; 
@@ -286,6 +295,7 @@ nav ul a:hover
     border-radius: 20px; 
     box-shadow:2px 2px 7px #e0e0e0;
     text-align: justify;
+    position: relative;
 }
 
 .description1
@@ -345,7 +355,7 @@ nav ul a:hover
     font-stretch: ultra-condensed;
     font-size: 1.2vw;
     padding-left: 20px;
-    padding-right: 40px;
+    padding-right: 30px;
     margin-top: 12px;
     margin-bottom: 8px;
 }
@@ -400,7 +410,7 @@ nav ul a:hover
     margin: 4px 30px 30px 30px;
     width: 24vw;
     height: 10vw;
-    min-width: 260px;
+    min-width: 300px;
     min-height: 110px;
     border: 1px solid white; 
     background-color: white;
@@ -435,7 +445,7 @@ nav ul a:hover
 .activites h3
 {
     font-size: 1rem;
-    margin-top: 10px;
+    margin-top: 12px;
     margin-left: 17px;
 }
 
@@ -508,7 +518,7 @@ nav ul a:hover
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     width: 100%; 
-    height: 75%;
+    height: 80%;
     object-fit: cover;
 }
 
@@ -598,7 +608,7 @@ nav ul a:hover
 
 .footer ul
 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     list-style-type: none; 
     line-height: 2.2;
     margin-right: auto;
@@ -816,10 +826,7 @@ p
 .titre_populaires
 {
     font-size: 2rem;
-    margin-top: 25px;
-    margin-left: 20px; 
-    margin-right: 15px;
-    margin-bottom: 10px;
+    margin: 25px 15px 10px 20px;
 }
 
 #chart i
@@ -876,7 +883,8 @@ p
 
 .afficher 
 { 
-    margin-top: 15px;
+    font-size: 1.7em;
+    margin-top: 20px;
     margin-left: 15px;
 }
 /*section activités*/ 
@@ -888,11 +896,11 @@ p
 
 #titre_activites 
 {   
-    margin-top: 10px;
+    margin-top: 35px;
     margin-right: 0px;
     margin-left: 15px;
     margin-bottom: 10px;
-    font-size: 1.8rem;
+    font-size: 2.1rem;
 }
 
 #vieuxport, #calanques,#pomegues, #frioul, #notredamede, #longchamps 
@@ -904,7 +912,7 @@ p
 }  
 
 .activites h3
-{position: absolute; bottom: 10px; font-size: 1.2rem;}
+{position: absolute; bottom: 10px; font-size: 1.4rem;}
 
 #pomegues img, 
 #frioul img, 
@@ -1131,7 +1139,7 @@ p
 .hebergements figure 
 {
     width: 90%;
-    height: 200px;
+    height: 185px;
     margin: 10px 15px 10px 15px;
 }
 
@@ -1176,7 +1184,7 @@ p
 
 .populaires h4, .hebergements h4  
 {
-    font-size: 1em;
+    font-size: 0.9em;
     margin-right: 12px;
 }
 
