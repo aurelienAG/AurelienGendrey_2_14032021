@@ -42,7 +42,7 @@ nav li
 {
     color:black;
     display: list-item;
-    margin-right: 50px;
+    margin-right: 60px;
 }
 
 nav a
@@ -103,13 +103,13 @@ nav ul a:hover
 
 .bouton
 {
-    width: 7vw;
+    width: 80px;
     min-width: 10px;
     background-color: #0065fc;
     font-family: "Raleway"; 
     font-weight: 700;
     color: white; 
-    font-size: 1em;
+    font-size: 0.9em;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border: none;
@@ -139,7 +139,7 @@ nav ul a:hover
     font-weight: bolder;
     margin-right: 25px;
     margin-top: 10px;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .filtres i
@@ -191,14 +191,16 @@ padding: 14px 13px 14px 13px;}
     border: 2px #e0e0e0 solid;
     border-radius: 50px;
     height: 45px;
-    margin: 10px 20px 0px 0px;
+    /*width: 15vw;*/
+    margin-right: 20px;
+    margin-top: 10px; 
     position: relative;
 }
 
 .intitule_filtres
 {  
     margin: 0px 20px 0px 55px;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .informations
@@ -233,13 +235,13 @@ padding: 14px 13px 14px 13px;}
     border: 1px #F2F2F2 solid;
     border-radius: 20px;
     background-color: #F2F2F2;
-    width: 67%;
+    width: 65%;
     margin-right: 2.1em; 
 }
 
 .titre_hebergements 
 {
-    padding: 15px 0px 0px 25px;
+    padding: 15px 0px 0px 35px;
     font-weight: bold;
 }
 
@@ -284,11 +286,11 @@ padding: 14px 13px 14px 13px;}
 
 .hebergements figure  
 {
-    padding: 2px 2px 2px 2px;
-    width: 18.5vw;
+    padding: 4px 4px 4px 4px;
+    width: 16.5vw;
     height: 14vw;
-    min-width: 140px;
-    min-height: 160px;
+    /*min-width: 180px;
+    min-height: 160px;*/
     margin: 5px 0px 30px 0px;
     border: 1px solid white; 
     background-color: white;
@@ -311,7 +313,7 @@ padding: 14px 13px 14px 13px;}
 {
     font-weight: bolder;
     font-stretch: ultra-condensed;
-    font-size: 1.2vw; 
+    font-size: 1.1vw; 
     min-width: 1.2em;
     margin-top: 3px;
     margin-bottom: 6px;
@@ -353,9 +355,9 @@ padding: 14px 13px 14px 13px;}
 {
     font-weight: bolder;
     font-stretch: ultra-condensed;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     padding-left: 20px;
-    padding-right: 30px;
+    padding-right: 55px;
     margin-top: 12px;
     margin-bottom: 8px;
 }
@@ -363,14 +365,14 @@ padding: 14px 13px 14px 13px;}
 .prix2
 {
     padding-left: 20px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .description2 
 {
     display: flex;
     flex-direction: column;
-    text-align: justify;
+    /*text-align: justify;*/
 }
 
 .etoilebleue2 
@@ -408,14 +410,14 @@ padding: 14px 13px 14px 13px;}
 .populaires figure
 {
     margin: 4px 30px 30px 30px;
-    width: 24vw;
+    width: 26vw;
     height: 10vw;
-    min-width: 300px;
+    min-width: 260px;
     min-height: 110px;
     border: 1px solid white; 
     background-color: white;
     border-radius: 15px; 
-    padding: 2px 2px 2px 2px; 
+    padding: 4px 4px 4px 4px; 
     box-shadow:2px 2px 7px #e0e0e0;
     text-align: justify; 
     position: relative;
@@ -444,7 +446,7 @@ padding: 14px 13px 14px 13px;}
 
 .activites h3
 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-top: 12px;
     margin-left: 17px;
 }
@@ -710,8 +712,7 @@ padding: 14px 13px 14px 13px;}
 
     .titre_recherche
 {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 5px; padding-right: 5px;
 } 
 
 p 
@@ -721,8 +722,7 @@ p
 
 .recherche
 {
-   padding-left: 5px; 
-   padding-top: 10px;
+   padding-left: 5px; padding-top: 10px;
 }
 
 .mapmarker 
@@ -961,6 +961,7 @@ p
     { 
        margin: 0px; 
        padding: 0px; 
+       position: relative;
     }
 
     #bloc_page 
@@ -1035,7 +1036,7 @@ p
 {
     font-size: 0.9em;
     padding-left: 10px; 
-    padding-right: 10px; 
+    padding-right: 35px; 
 }
 
 
@@ -1074,7 +1075,7 @@ p
     border: none;
     cursor: pointer;
     position: absolute;   
-    right: 20px;
+    right: 40px;
 }
 
 .filtres
@@ -1154,15 +1155,7 @@ p
 
 .titre_populaires
 {
-    margin-top: 25px;
-    margin-left: 20px; 
-    margin-right: 15px;
-    margin-bottom: 10px;
-}
-
-#chart i
-{
-    margin-right: 10px;
+    margin: 25px 20px 10px 15px;
 }
 
 .populaires 
@@ -1184,18 +1177,19 @@ p
 
 .populaires h4, .hebergements h4  
 {
-    font-size: 0.9em;
+    font-size: 1em;
+    padding-right: 18px;
     margin-right: 12px;
 }
 
 .prix2 
 {
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-bottom: 10px;
 } 
 .prix1 
 {
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 .etoilebleue2, .etoilebleue
 {
@@ -1208,7 +1202,7 @@ p
 .afficher 
 { 
     margin-top: 15px;
-    margin-left: 15px;
+    margin-left: 20px;
     font-size: 1em;
 }
 /*section activités*/ 
@@ -1222,7 +1216,7 @@ p
 {   
     margin-top: 10px;
     margin-right: 0px;
-    margin-left: 15px;
+    margin-left: 20px;
     margin-bottom: 10px;
 }
 
