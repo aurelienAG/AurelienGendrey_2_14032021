@@ -217,7 +217,7 @@ padding: 14px 13px 14px 13px;}
     padding: 5px 9px 5px 9px;
 }
 /* Section hébergements */
-.section_hebergements
+#section_hebergements
 {
     display: flex; 
     flex-direction: row;
@@ -750,7 +750,7 @@ p
 }
 
 /* Section hébergements */ 
-.section_hebergements
+#section_hebergements
 {
    width:auto;
    flex-direction: column-reverse;
@@ -1074,7 +1074,7 @@ p
 }
 
 /*Section hébergements*/ 
-.section_hebergements
+#section_hebergements
 {
    width:auto;
    flex-direction: column-reverse;
