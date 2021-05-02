@@ -103,7 +103,7 @@ nav ul a:hover
 
 .bouton
 {
-    width: 80px;
+    width: 100px;
     min-width: 10px;
     background-color: #0065fc;
     font-family: "Raleway"; 
@@ -117,12 +117,7 @@ nav ul a:hover
     padding-left: 10px;
     padding-right: 10px; 
 }
-
-#bouton_loupe
-{
-    visibility: hidden;
-    margin-left: -100px;
-}
+.bouton i {visibility: hidden; height:0px; width: 0px;} 
 
 .filtres
 {
@@ -191,7 +186,6 @@ padding: 14px 13px 14px 13px;}
     border: 2px #e0e0e0 solid;
     border-radius: 50px;
     height: 45px;
-    /*width: 15vw;*/
     margin-right: 20px;
     margin-top: 10px; 
     position: relative;
@@ -289,8 +283,6 @@ padding: 14px 13px 14px 13px;}
     padding: 4px 4px 4px 4px;
     width: 16.5vw;
     height: 14vw;
-    /*min-width: 180px;
-    min-height: 160px;*/
     margin: 5px 0px 30px 0px;
     border: 1px solid white; 
     background-color: white;
@@ -365,14 +357,13 @@ padding: 14px 13px 14px 13px;}
 .prix2
 {
     padding-left: 20px;
-    font-size: 0.9rem;
+    font-size: 1vw;
 }
 
 .description2 
 {
     display: flex;
     flex-direction: column;
-    /*text-align: justify;*/
 }
 
 .etoilebleue2 
@@ -656,7 +647,6 @@ padding: 14px 13px 14px 13px;}
        padding-top: 20px;
        margin-right: 0px;
        width: 100%; 
-       
     } 
 
     header img:nth-child(1)
@@ -734,27 +724,21 @@ p
 
 .champs_de_recherche 
 {  
-    width: 70vw;
+    width: 55vw;
 }
 
 .bouton
+{border-radius: 15px; width: 52px;
+    height: 50px; padding: 0px;margin-left: -10px;}
+
+.bouton i 
 {
-    visibility: hidden;
+  visibility: visible;
+  margin-left: -17px;
+  font-size: 1.2em;
 }
 
-#bouton_loupe
-{   
-    width: 48px;
-    height: 50px;
-    visibility:visible;
-    background-color: #0065fc;
-    font-family: "Raleway"; 
-    font-weight: 700;
-    color: white;
-    border-radius: 15px;
-    border: none;
-    cursor: pointer;
-}
+#rechercher {visibility: hidden; font-size: 0px;display:none;}
 
 .filtres
 {
@@ -765,14 +749,6 @@ p
     font-size: 1em;
 }
 
-#eco, 
-#famille,
-#romantique,
-#animaux
-{
-    margin-top: 10px;
-    margin-right: 8px;
-}
 /* Section hébergements */ 
 .section_hebergements
 {
@@ -1050,33 +1026,21 @@ p
 {  
    font-weight: bolder; 
     padding-left: 20px; 
-    width: 90vw;
-    position: relative; 
+    width: 70vw;
 }
 
 .bouton
+{border-radius: 15px; width: 52px;
+    height: 50px; padding: 0px;margin-left: -10px;}
+    
+.bouton i 
 {
-    visibility: hidden;
-    margin-right: 0px; 
-    padding-right: 0px;
+  visibility: visible;
+  margin-left: -17px;
+  font-size: 1.2em;
 }
 
-#bouton_loupe
-{   
-    width: 45px;
-    height: 50px;
-    visibility: visible;
-    background-color: #0065fc;
-    font-family: "Raleway"; 
-    font-weight: 700;
-    color: white;
-    font-size: 0.9em;
-    border-radius: 15px;
-    border: none;
-    cursor: pointer;
-    position: absolute;   
-    right: 40px;
-}
+#rechercher {visibility: hidden; font-size: 0px;display:none;}
 
 .filtres
 {
@@ -1178,7 +1142,7 @@ p
 .populaires h4, .hebergements h4  
 {
     font-size: 1em;
-    padding-right: 18px;
+    padding-right: 35px;
     margin-right: 12px;
 }
 
